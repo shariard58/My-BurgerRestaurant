@@ -1,4 +1,6 @@
 import React from "react";
+import "./Ingredient.css";
+
 import BreadTop from "../../../assests/images/top.png";
 import BreadBottom from "../../../assests/images/bottom.png";
 import Meat from "../../../assests/images/meat.png";
@@ -58,7 +60,7 @@ const Ingredient = (props) => {
       ingredient = null;
   }
 
-  return <div>{ingredient}</div>;
+  return <div className="Ingredient ">{ingredient}</div>;
 };
 
 export default Ingredient;
