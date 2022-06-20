@@ -1,3 +1,6 @@
 First Step :
 1. Installing some packages:
  npm install bootstrap reactstrap react-popper axios --save
+
+ Second Step:
+ Just to create a simple Navigaton bar using reactstrap..
