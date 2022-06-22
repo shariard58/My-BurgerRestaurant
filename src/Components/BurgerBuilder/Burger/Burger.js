@@ -1,14 +1,31 @@
 import React from "react";
+import "./Burger.css";
+
 import Ingredient from "../Ingredient/Ingredient";
 
+// bahier kno component theke kno kisu send korle seta kmne map korte hoy seta
 const Burger = (props) => {
-  return (
-    <div>
-      <Ingredient type="bread-top" />
-      <Ingredient type="cheese" />
-      <Ingredient type="salad" />
+  let ingredientArr = props.ingradients
+    .map((item) => {
+      let amountArr = [...Array(item.amount).keys()]; // this a technique of creating an array
 
-      <Ingredient type="meat" />
+      return amountArr.map((_) => {
+        return <Ingredient type={item.type} key={Math.random()} />;
+      });
+    })
+    .reduce((arr, element) => {
+      return arr.concat(element);
+    }, []);
+
+  if (ingredientArr.length === 0) {
+    ingredientArr = <p> Please add some ingredients! </p>;
+  }
+
+  return (
+    <div className="Burger">
+      <Ingredient type="bread-top" />
+
+      {ingredientArr}
       <Ingredient type="bread-bottom" />
     </div>
   );
