@@ -1,6 +1,7 @@
 import React from "react";
 import BurgerBuilder from "./BurgerBuilder/BurgerBuilder";
 import Header from "./Header/Header";
+import Controls from "./BurgerBuilder/Controls/Controls";
 
 const Main = (props) => {
   return (
