@@ -72,6 +72,11 @@ const Controls = (props) => {
             BDT{" "}
           </h5>
         </CardFooter>
+
+        <Button disabled={!props.purchasable} onClick={props.toggleModal}>
+          {" "}
+          Order Now{" "}
+        </Button>
       </Card>
     </div>
   );
