@@ -13,8 +13,18 @@
   color: white;
   font-size: 25px;
   margin-top: -25px;
+  margin-left: 10px;
 }
 
 .NavLink:hover {
+  color: wheat;
+  text-decoration: none;
+}
+
+/* Active namer ekta class er kaj holo jokhn kno navlink a click kora hoy  */
+/* tokhn automatically ei class ta active hoye jay */
+
+.active {
+  text-shadow: 1px 1px gray;
   color: wheat;
 }
